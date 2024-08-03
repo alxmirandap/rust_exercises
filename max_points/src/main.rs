@@ -200,4 +200,13 @@ mod tests {
     
         assert_eq!(max_points(vec_points), 6);
     }    
+
+
+    #[test]
+    fn testcase_6() {
+        let points = [[10,2],[-15,3],[-15,-7],[0,2],[-15,10],[-15,-15]];
+        let vec_points = create_test_vector(&points);
+    
+        assert_eq!(max_points(vec_points), 4);
+    }    
 }
